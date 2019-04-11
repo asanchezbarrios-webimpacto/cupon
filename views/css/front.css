@@ -49,18 +49,20 @@
     display: block;
     transition: 0.3s;
     text-align: center;
+    background-color: rgba(59, 41, 43, 0.4);
 }
 
 .sidenav > p {
-      color: black;
+      color: #9999FF;
 }
   
 .sidenav > p + p{
-    color: red;
+    color: #FF4848;
+    font-size: 2.5em;
 }
 
 .sidenav > p + p + p{ 
-    color: black;
+    color: #9999FF;
     font-size: 0.7em;
 }
 
@@ -88,17 +90,24 @@
 
 #opener {
     position: fixed;
-    bottom: 210px;
+    bottom: 208px;
     right: -112px;
     z-index: 2;
     color:white;
     transform: rotate(270deg);
     -webkit-transform: rotate(270deg);
     -ms-transform: rotate(270deg);
-    background-color: #f8b63b;
+    background-color: #ffcd6c;
     width: 250px;
+    height: 30px;
     text-align:center;
     transition: 0.5s;
     cursor:pointer;
     color: black;
 }
+
+#arrow-left , #arrow-right{
+    background-color: #efa94a;
+    font-size: 25px;
+}
+
