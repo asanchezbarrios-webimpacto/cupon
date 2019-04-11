@@ -26,20 +26,23 @@
 * to avoid any conflicts with others containers.
 */
 
-function openNav() {
+
+$(document).ready(function() {
     var boton = $('#opener');
-    if(boton.hasClass('cerrado')) {
-        document.getElementById("mySidenav").style.width = "400px";
-        document.getElementById("opener").style.right = "280px";
-        $('#arrow-left').html('&#10503;');
-        $('#arrow-right').html('&#10502;');
-        boton.removeClass('cerrado');
-    } else {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("opener").style.right = "-112px";
-        $('#arrow-right').html('&#10503;');
-        $('#arrow-left').html('&#10502;');
-        boton.addClass('cerrado');
-    }  
-    
-}
+    var sideNav = $('#mySidenav');
+    boton.click(function() {
+        if(boton.hasClass('cerrado')) {
+            $(sideNav).css('width' , '400px');
+            $(boton).css('right' , '280px');
+            $('#arrow-left').html('&#10503;');
+            $('#arrow-right').html('&#10502;');
+            $(boton).removeClass('cerrado');
+        } else {
+            $(sideNav).css('width' , '0');
+            $(boton).css('right' , '-112px');
+            $('#arrow-right').html('&#10503;');
+            $('#arrow-left').html('&#10502;');
+            $(boton).addClass('cerrado');
+        }  
+    });
+});

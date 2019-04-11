@@ -31,56 +31,74 @@
     width: 0;
     position: fixed;
     z-index: 1;
-    bottom: 8px;
+    bottom: 98px;
     right: 0;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    background-image: url('logo-cupon.jpg');
-  }
+    background-image: url('../img/logo3.jpg');
+    background-position: center; 
+}
   
-  .sidenav p {
+.sidenav p {
     width: 400px;
     padding: 8px 8px 8px 32px;
     font-size: 25px;
     color: #818181;
     display: block;
     transition: 0.3s;
-  }
+    text-align: center;
+}
+
+.sidenav > p {
+      color: black;
+}
   
-  .sidenav a {
+.sidenav > p + p{
+    color: red;
+}
+
+.sidenav > p + p + p{ 
+    color: black;
+    font-size: 0.7em;
+}
+
+.sidenav a {
     width: 400px;
     padding: 8px 8px 8px 32px;
     font-size: 25px;
     color: white;
     display: block;
     transition: 0.3s;
-  }
+}
   
-  .sidenav a:hover {
+.sidenav a:hover {
     color: #f1f1f1;
-  }
+}
   
-  .sidenav .closebtn {
+.sidenav .closebtn {
     width: 400px;
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
-  #opener {
-      position: fixed;
-      bottom: 120px;
-      right: -112px;
-      z-index: 2;
-      color:white;
-      transform: rotate(270deg);
-      -webkit-transform: rotate(270deg);
-      -ms-transform: rotate(270deg);
-      background-color: black;
-      width: 250px;
-      text-align:center;
-      transition: 0.5s;
-  }
+}
+
+#opener {
+    position: fixed;
+    bottom: 210px;
+    right: -112px;
+    z-index: 2;
+    color:white;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    background-color: #f8b63b;
+    width: 250px;
+    text-align:center;
+    transition: 0.5s;
+    cursor:pointer;
+    color: black;
+}
