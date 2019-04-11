@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>cupon</name>
+	<displayName><![CDATA[cupon]]></displayName>
+	<version><![CDATA[1.0.0]]></version>
+	<description><![CDATA[Modulo que muestra el codigo de descuento general]]></description>
+	<author><![CDATA[Aitor_Irene]]></author>
+	<tab><![CDATA[front_office_features]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+</module>
